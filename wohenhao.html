@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 0;
+        }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 15px; }
+        
+        /* 一般按鈕樣式 */
+        a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid #ccc;
+            transition: 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        a:hover {
+            background: #0F4761;
+            color: white;
+            border-left: 4px solid #f1c40f;
+            transform: translateX(5px);
+        }
+
+        /* [新增] 返回首頁按鈕的特別樣式 */
+        a.home-btn {
+            background: linear-gradient(135deg, #5a6c7d 0%, #7a8fa3 100%);
+            color: white;
+            border-left: 4px solid #2c3e50;
+            font-weight: bold;
+            margin-bottom: 25px; /* 與下方選單拉開距離 */
+        }
+        a.home-btn:hover {
+            background: linear-gradient(135deg, #7a8fa3 0%, #5a6c7d 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .section-title { font-size: 0.9em; color: #888; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html" target="_top" class="home-btn">⬅ 返回網站首頁</a></li>
+    </ul>
+
+    <hr style="border: 0; border-top: 1px dashed #ccc; margin-bottom: 20px;">
+
+    <div class="section-title">快速導覽</div>
+    <ul>
+        <li><a href="content.html#intro" target="main">A. 遊戲介紹 (圖文)</a></li>
+        <li><a href="content.html#roles" target="main">A. 角色職責</a></li>
+        <li><a href="content.html#schedule" target="main">D. 開發時程 (表格)</a></li>
+        <li><a href="content.html#video" target="main">D. 參考影片 (Youtube)</a></li>
+        
+        <li><a href="https://assetstore.unity.com/" target="_blank">Unity 素材商店 (外連)</a></li>
+    </ul>
+</body>
+</html>

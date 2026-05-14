@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>個人介紹</title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 20px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	min-height: 100vh;
+}
+
+.page-title {
+	font-size: xx-large;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	text-align: center;
+	margin: 20px 0;
+	color: #2c3e50;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-table {
+	width: 100%;
+	margin-bottom: 30px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-link {
+	display: inline-block;
+	padding: 10px 20px;
+	background: linear-gradient(135deg, #5a6c7d 0%, #7a8fa3 100%);
+	color: #ffffff !important;
+	text-decoration: none;
+	border-radius: 25px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(90, 108, 125, 0.4);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.home-link:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(90, 108, 125, 0.6);
+	background: linear-gradient(135deg, #7a8fa3 0%, #5a6c7d 100%);
+}
+
+.home-link:active {
+	transform: translateY(0);
+}
+
+.content-table {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 15px;
+	padding: 20px;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	border: 3px solid #7a8fa3;
+	border-radius: 15px;
+	background: #f5f5f5;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+}
+
+.photo-container:hover {
+	transform: scale(1.02);
+	box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.photo-slider {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.photo-slider img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.photo-slider img.active {
+	opacity: 1;
+}
+
+.text-content {
+	padding: 0 20px;
+	vertical-align: top;
+}
+
+.text-content p {
+	line-height: 1.8;
+	margin-bottom: 15px;
+	color: #34495e;
+	text-align: justify;
+}
+</style>
+</head>
+
+<body>
+
+<table class="nav-table">
+	<tr>
+		<td style="height: 37px">
+			<a class="home-link" href="index.html">首頁</a>
+		</td>
+		<td style="height: 37px"></td>
+	</tr>
+</table>
+
+<p class="page-title"><strong>個人介紹</strong></p>
+<p>&nbsp;</p>
+
+<table class="content-table">
+	<tr>
+		<td style="width: 500px; vertical-align: top;">
+		<div class="photo-container">
+			<div class="photo-slider" id="photoSlider">
+				<!-- 照片将通过 JavaScript 动态加载 -->
+			</div>
+		</div>
+		</td>
+		<td class="text-content">
+		<p>大家好，我是葉韋植，來自馬來西亞雪蘭莪，目前就讀於國立台中科技大學多媒體設計系。我是一位熱愛學習且不斷追求成長的人，對設計、影音製作以及舞台製作有著深厚的熱情和投入。</p>
+		<p><br /></p>
+		<p>自中學時期起，我便對藝術領域產生了濃厚興趣，特別是在平面設計、影音製作以及舞台表演方面。我不僅多次擔任學校活動中的平面設計職務，還積極參與戲劇社的活動，透過實踐不斷提升自己的專業能力。值得一提的是，我曾代表學校參加全國性戲劇比賽，這段經歷不僅豐富了我的視野，也讓我深刻體會到團隊合作與創意表達的重要性。</p>
+		<p><br /></p>
+		<p>作為一名多媒體設計系的學生，我熱衷於結合設計與技術，創造出具有視覺與情感衝擊力的作品。我希望在未來能夠進一步專注於影視相關領域，將設計理念融入影音製作，實現自我價值的同時，帶給觀眾更多觸動心靈的視覺體驗。</p>
+		<p><br /></p>
+		<p>回顧過往，我深信每一份成就的背後都離不開努力與堅持。面對未來，我將持續保持學習的熱忱，以正向的態度迎接挑戰，努力在專業領域中不斷精進，為自己書寫更精彩的篇章。</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 500px">&nbsp;</td>
+		<td class="text-content">
+		<p>&nbsp;Hello, my name is Yap Wee Zhi, and I come from Selangor, Malaysia. I am currently studying Multimedia Design at the National Taichung University of Science and Technology. I am a passionate learner who is constantly seeking growth, particularly in the fields of design, video production, and stage production.</p>
+		<p><br /></p>
+		<p>My interest in the arts began during my high school years, especially in graphic design, video production, and stage performances. I dedicated significant time to exploring these areas, taking on various roles such as graphic designer for school events and actively participating in the drama club. One of my most memorable experiences was representing my school in a national drama competition, which not only broadened my perspective but also strengthened my belief in the importance of teamwork and creative expression.</p>
+		<p><br /></p>
+		<p>As a multimedia design student, I am enthusiastic about blending design and technology to create visually impactful and emotionally engaging works. My ultimate goal is to specialize in the film and video production industry, where I can integrate design concepts into audiovisual storytelling, bringing meaningful and memorable experiences to audiences.</p>
+		<p><br /></p>
+		<p>Looking back on my journey, I firmly believe that every achievement is the result of hard work and perseverance. Moving forward, I will continue to maintain my enthusiasm for learning and a positive mindset to embrace new challenges. I am determined to further develop my skills and craft a meaningful and exciting future in my chosen field.</p>
+		</td>
+	</tr>
+</table>
+
+<script>
+// 照片列表
+const photos = [
+	'profile_pic/1732474095856.jpg',
+	'profile_pic/1732477155865.jpg',
+	'profile_pic/1736091603676.jpg',
+	'profile_pic/1736671396891.jpg',
+	'profile_pic/20250207_145139.jpg',
+	'profile_pic/A352_PhotoForGuest_20250717_161341.png',
+	'profile_pic/IMG_20221206_224643_817.jpg',
+	'profile_pic/IMG_20241101_012234_088.jpg',
+	'profile_pic/IMG_20250523_233252_771.webp',
+	'profile_pic/IMG_20250524_004330_262.webp',
+	'profile_pic/IMG_20251016_235252_911.webp',
+	'profile_pic/mmexport1703162887209.jpg',
+	'profile_pic/mmexport1716711120137.jpg',
+	'profile_pic/received_185997934374310.jpeg',
+	'profile_pic/received_225165203150485.jpeg',
+	'profile_pic/received_363412341956040.jpeg',
+	'profile_pic/照片 2025-4-8 下午3.48.jpg'
+];
+
+// 初始化照片轮播
+function initPhotoSlider() {
+	const slider = document.getElementById('photoSlider');
+	let currentIndex = 0;
+	
+	// 创建所有图片元素
+	photos.forEach((photo, index) => {
+		const img = document.createElement('img');
+		img.src = photo;
+		img.alt = 'Profile Photo ' + (index + 1);
+		if (index === 0) {
+			img.classList.add('active');
+		}
+		slider.appendChild(img);
+	});
+	
+	// 轮播函数
+	function showNextPhoto() {
+		const images = slider.querySelectorAll('img');
+		images[currentIndex].classList.remove('active');
+		currentIndex = (currentIndex + 1) % photos.length;
+		images[currentIndex].classList.add('active');
+	}
+	
+	// 每3秒切换一张照片
+	setInterval(showNextPhoto, 3000);
+}
+
+// 页面加载完成后初始化
+window.addEventListener('DOMContentLoaded', initPhotoSlider);
+</script>
+
+</body>
+</html>

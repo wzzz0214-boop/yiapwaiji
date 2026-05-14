@@ -1,0 +1,852 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>個人報告</title>
+<style type="text/css">
+body {
+	font-family: Aptos, sans-serif;
+	margin: 0;
+	padding: 20px;
+	line-height: 1.6;
+	background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	min-height: 100vh;
+	color: #34495e;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.auto-style1 {
+	text-align: center;
+}
+a:link
+	{color:#467886;
+	text-decoration:none;
+}
+.auto-style2 {
+	line-height: 115%;
+	font-size: 12.0pt;
+	font-family: Aptos, sans-serif;
+	margin-left: 0cm;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 5.0pt;
+}
+.auto-style3 {
+	color: #467886;
+	text-decoration: none;
+}
+h1
+	{margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;
+}
+.auto-style4 {
+	line-height: 115%;
+	font-size: 12.0pt;
+	font-family: Aptos, sans-serif;
+	margin-left: 36.0pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 0cm;
+}
+.auto-style5 {
+	line-height: 115%;
+	font-size: 12.0pt;
+	font-family: Aptos, sans-serif;
+	margin-left: 36.0pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 8.0pt;
+}
+.auto-style9 {
+	color: #000000;
+}
+.auto-style10 {
+	font-weight: bold;
+}
+.auto-style11 {
+	color: #000000;
+	font-weight: bold;
+}
+.auto-style12 {
+	text-indent: -18.0pt;
+	line-height: 115%;
+	font-size: 12.0pt;
+	font-family: Aptos, sans-serif;
+	margin-left: 36.0pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 8.0pt;
+	text-align: center;
+}
+.auto-style13 {
+	line-height: 115%;
+	font-size: 12.0pt;
+	font-family: Aptos, sans-serif;
+	margin-left: 0cm;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 5.0pt;
+	text-align: center;
+}
+.auto-style14 {
+	text-decoration: none;
+}
+.auto-style15 {
+	font-family: STKaiti;
+}
+.auto-style17 {
+	text-align: center;
+	font-size: 100.0pt;
+	line-height: 115%;
+	font-family: LiSu;
+}
+.auto-style18 {
+	line-height: 115%;
+	font-size: 12.0pt;
+	font-family: Aptos, sans-serif;
+	margin-left: 36.0pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 0cm;
+	text-align: center;
+}
+.auto-style19 {
+	text-indent: -18.0pt;
+	line-height: 115%;
+	font-size: 12.0pt;
+	font-family: Aptos, sans-serif;
+	margin-left: 36.0pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 0cm;
+	text-align: center;
+}
+.auto-style21 {
+	color: #000000;
+	text-decoration: none;
+}
+.auto-style22 {
+	font-weight: bold;
+	text-decoration: none;
+}
+.auto-style23 {
+	text-decoration: underline;
+	color: #0F4761;
+}
+.auto-style24 {
+	line-height: 115%;
+	font-size: 12.0pt;
+	font-family: Aptos, sans-serif;
+	margin-left: 36.0pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 8.0pt;
+	text-align: center;
+}
+.auto-style27 {
+	font-size: 20pt;
+	font-family: STKaiti;
+}
+.auto-style28 {
+	line-height: 115%;
+	font-size: 12.0pt;
+	font-family: STKaiti;
+	margin-left: 36.0pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 8.0pt;
+	text-align: center;
+}
+.auto-style29 {
+	text-align: right;
+}
+
+.home-link {
+	display: inline-block;
+	padding: 10px 20px;
+	background: linear-gradient(135deg, #5a6c7d 0%, #7a8fa3 100%);
+	color: #ffffff !important;
+	text-decoration: none;
+	border-radius: 25px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(90, 108, 125, 0.4);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.home-link:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(90, 108, 125, 0.6);
+	background: linear-gradient(135deg, #7a8fa3 0%, #5a6c7d 100%);
+}
+
+.home-link:active {
+	transform: translateY(0);
+}
+
+.download-link {
+	display: inline-block;
+	padding: 10px 20px;
+	background: linear-gradient(135deg, #6c7a8f 0%, #8fa3b8 100%);
+	color: #ffffff !important;
+	text-decoration: none;
+	border-radius: 25px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(108, 122, 143, 0.4);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.download-link:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(108, 122, 143, 0.6);
+	background: linear-gradient(135deg, #8fa3b8 0%, #6c7a8f 100%);
+}
+
+.download-link:active {
+	transform: translateY(0);
+}
+
+.nav-buttons-table {
+	width: 100%;
+	margin-bottom: 20px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 10px;
+	padding: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.auto-style31 {
+	font-size: 22pt;
+	font-family: STKaiti;
+	color: #0F4761;
+}
+.auto-style32 {
+	color: #0F4761;
+}
+.auto-style33 {
+	color: #0F4761;
+	font-weight: bold;
+}
+.auto-style34 {
+	font-size: 18pt;
+}
+.auto-style35 {
+	font-size: 20pt;
+	font-weight: bold;
+}
+.auto-style36 {
+	font-size: 20pt;
+}
+.auto-style37 {
+	text-indent: -18.0pt;
+	line-height: 115%;
+	font-size: 18pt;
+	font-family: Aptos, sans-serif;
+	margin-left: 36.0pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 0cm;
+	text-align: center;
+}
+.auto-style38 {
+	text-align: center;
+	font-size: 18pt;
+}
+.auto-style39 {
+	font-size: 22pt;
+	font-weight: bold;
+}
+.auto-style40 {
+	font-size: 22pt;
+}
+.auto-style41 {
+	color: #0F4761;
+	font-size: 22pt;
+}
+.auto-style42 {
+	font-family: STKaiti;
+	font-size: 18pt;
+}
+</style>
+</head>
+
+<body>
+
+<table class="nav-buttons-table">
+	<tr>
+		<td style="height: 48px"><a class="home-link" href="index.html">首頁</a></td>
+		<td class="auto-style29" style="height: 48px">
+		&nbsp;</td>
+		<td class="auto-style29" style="height: 48px">
+		<a class="download-link" href="reportpptnpdf/s1411322055_多媒體系統＿簡報.pptx">下載PPT </a><a class="download-link" href="reportpptnpdf/s1411322055_多媒體系統＿企劃書.pdf">下載PDF</a></td>
+	</tr>
+</table>
+<p class="auto-style17" style="mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-MY; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA">
+<strong>美味牛丼</strong></p>
+<p align="center" class="MsoNormal">
+<span style="font-family:STKaiti;mso-fareast-language:ZH-TW"><font size="5">學生：</font><span lang="EN-MY" class="auto-style34">1411322055
+</span><font size="5">葉韋植</font><span lang="EN-MY"><o:p></o:p></span></span></p>
+<p align="center" class="auto-style42" style="mso-fareast-language: ZH-TW">
+指導老師：陳賢錫老師</p>
+<p align="center" class="MsoNormal">
+<span lang="ZH-CN" style="mso-ascii-font-family:新細明體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:新細明體;mso-bidi-font-family:新細明體" class="auto-style42">進度：100</span><span lang="EN-MY" style="mso-fareast-font-family:DengXian;
+mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:新細明體" class="auto-style42">%</span><o:p></o:p></p>
+<o:p></o:p>
+<div style="height: 377px">
+</div>
+<p align="center" class="MsoNormal">
+<b>
+ <span lang="ZH-CN" style="font-size:40.0pt;line-height:115%;font-family:STKaiti">
+ 目錄&nbsp; </span></b></p>
+<p align="center" class="MsoNormal">
+&nbsp;</p>
+<p class="auto-style13" style="tab-stops: 48.0pt right dotted 450.8pt"><!--[if supportFields]>
+<span lang="EN-MY" style="font-size:22.0pt;line-height:115%">
+<span style="mso-spacerun:yes" class="auto-style33">&nbsp;</span></span><![endif]--><span lang="EN-MY"><span lang="ZH-CN" style="font-size:22.0pt;
+ line-height:115%;font-family:STKaiti;mso-bidi-font-weight:bold;mso-no-proof:
+ yes" class="auto-style9"><a href="#製作動機" class="auto-style14"><span class="auto-style33">壹</span></a><a href="#製作動機"><span class="auto-style33">、</span></a></span><a href="#製作動機" class="auto-style14"><span style="font-size:22.0pt;line-height:115%;mso-no-proof:yes;text-underline:none" class="auto-style33"><span style="mso-tab-count:1">
+</span></span></a><a href="#製作動機">
+<span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-no-proof: yes" class="auto-style33">
+製作動機</span><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style33"><span style="mso-tab-count:1 dotted">...
+</span></span><!--[if supportFields]>
+<span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style33">
+PAGEREF _Toc210705756 \h </span><![endif]-->
+<span style="font-size:22.0pt;line-height:115%;color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none">3</span><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style32"><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200310030003700300035003700350036000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><![endif]--></a></span><span class="auto-style3" style="text-underline: none;"><span lang="EN-MY" style="font-size:22.0pt;line-height:115%;
+ mso-no-proof:yes"><o:p></o:p></span></span></p>
+<p class="MsoNormal">
+<span lang="EN-MY" style="mso-no-proof:yes" class="auto-style23"><o:p>&nbsp;</o:p></span></p>
+<p class="auto-style13" style="tab-stops: 48.0pt right dotted 450.8pt">
+<span lang="EN-MY"><a href="#故事大綱" class="auto-style21">
+<span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-bidi-font-weight: bold; mso-no-proof: yes" class="auto-style33">
+貳、</span><span style="font-size:22.0pt;line-height:115%;mso-no-proof:yes;
+ text-underline:none" class="auto-style33"><span style="mso-tab-count:1"> </span>
+</span></a><a href="#故事大綱" class="auto-style22">
+<span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-no-proof: yes" class="auto-style33">
+故事大綱</span></a><a href="#故事大綱" class="auto-style14"><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style13"><span style="mso-tab-count:1 dotted" class="auto-style33">...
+</span></span><span class="auto-style9"><!--[if supportFields]>
+<span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style33">
+PAGEREF _Toc210705757 \h </span><![endif]-->
+</span>
+<span style="font-size:22.0pt;line-height:115%;color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none">3</span><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style32"><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200310030003700300035003700350037000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><![endif]--></a></span><span class="auto-style3" style="text-underline: none;"><span lang="EN-MY" style="font-size:22.0pt;line-height:115%;
+ mso-no-proof:yes"><o:p></o:p></span></span></p>
+<p class="MsoNormal">
+<span lang="EN-MY" style="mso-no-proof:yes" class="auto-style23"><o:p>&nbsp;</o:p></span></p>
+<p class="auto-style13" style="tab-stops: 48.0pt right dotted 450.8pt">
+<span lang="EN-MY"><a href="#游戲類型">
+<span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-bidi-font-weight: bold; mso-no-proof: yes" class="auto-style33">
+參、</span></a><a href="#游戲類型" class="auto-style10"><span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-no-proof: yes" class="auto-style33">遊戲類型</span></a><a href="#游戲類型"><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style33"><span style="mso-tab-count:1 dotted">...
+</span></span><!--[if supportFields]>
+<span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style33">
+PAGEREF _Toc210705758 \h </span><![endif]-->
+<span style="font-size:22.0pt;line-height:115%;color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none">3</span><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style32"><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200310030003700300035003700350038000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><![endif]--></a></span><span class="auto-style3" style="text-underline: none;"><span lang="EN-MY" style="font-size:22.0pt;line-height:115%;
+ mso-no-proof:yes"><o:p></o:p></span></span></p>
+<p class="MsoNormal">
+<span lang="EN-MY" style="mso-no-proof:yes" class="auto-style23"><o:p>&nbsp;</o:p></span></p>
+<p class="auto-style13" style="tab-stops: 48.0pt right dotted 450.8pt">
+<span lang="EN-MY"><a href="#游戲流程">
+<span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-bidi-font-weight: bold; mso-no-proof: yes" class="auto-style33">
+肆、</span></a><a href="#游戲流程" class="auto-style10"><span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-no-proof: yes" class="auto-style33">遊戲流程</span></a><a href="#游戲流程"><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style33"><span style="mso-tab-count:1 dotted">...
+</span></span><!--[if supportFields]>
+<span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style33">
+PAGEREF _Toc210705759 \h </span><![endif]-->
+<span style="font-size:22.0pt;line-height:115%;color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none">3</span><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style32"><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200310030003700300035003700350039000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><![endif]--></a></span><span class="auto-style3" style="text-underline: none;"><span lang="EN-MY" style="font-size:22.0pt;line-height:115%;
+ mso-no-proof:yes"><o:p></o:p></span></span></p>
+<p class="MsoNormal">
+<span lang="EN-MY" style="mso-no-proof:yes" class="auto-style23"><o:p>&nbsp;</o:p></span></p>
+<p class="auto-style13" style="tab-stops: 48.0pt right dotted 450.8pt">
+<span lang="EN-MY"><a href="#_Toc210705760">
+<span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-bidi-font-weight: bold; mso-no-proof: yes" class="auto-style33">
+伍、</span></a><a class="auto-style10" href="#游戲畫面"><span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-no-proof: yes" class="auto-style33">遊戲畫面</span></a></span></p>
+<p class="MsoNormal">
+<span lang="EN-MY" style="mso-no-proof:yes" class="auto-style23"><o:p>&nbsp;</o:p></span></p>
+<p class="auto-style13" style="tab-stops: 48.0pt right dotted 450.8pt">
+<span lang="EN-MY"><a href="#_Toc210705761">
+<span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-bidi-font-weight: bold; mso-no-proof: yes" class="auto-style33">
+陸、</span></a><a href="#_Toc210705761" class="auto-style10"><span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-no-proof: yes" class="auto-style33">參考遊戲</span></a><a href="#_Toc210705761"><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style33"><span style="mso-tab-count:1 dotted">...
+</span></span><!--[if supportFields]>
+<span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style33">
+PAGEREF _Toc210705761 \h </span><![endif]-->
+<span style="font-size:22.0pt;line-height:115%;color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none">
+<span class="auto-style33">10</span></span><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style32"><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200310030003700300035003700360031000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><![endif]--></a></span><o:p></o:p></p>
+<p class="auto-style2" style="tab-stops: 48.0pt right dotted 450.8pt">
+<o:p></o:p>
+</p>
+<o:p></o:p>
+<div style="height: 173px">
+</div>
+<p class="auto-style2" style="tab-stops: 48.0pt right dotted 450.8pt">
+<o:p></o:p>
+</p>
+<h1 style="margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo4" class="auto-style1">
+<a name="製作動機"><![if !supportLists]>
+<span lang="EN-MY" style="font-family:
+STKaiti;mso-bidi-font-family:STKaiti;mso-bidi-font-weight:
+bold" class="auto-style11"><span style="mso-list:Ignore" class="auto-style32">壹、<span style="font-style: normal; font-variant: normal; font-size: 7.0pt; line-height: normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>
+<span style="font-family:STKaiti;mso-fareast-language:ZH-TW" class="auto-style10">製作動機</span></a><b><span lang="EN-MY" style="font-family:STKaiti;color:windowtext"><o:p></o:p></span></b></h1>
+<p class="auto-style18" style="mso-add-space: auto">
+<span style="font-family:STKaiti;mso-fareast-language:ZH-TW">
+<font size="5">從自己的生活做取材，因為自己在這家店打工，然後有想要報復自己公司的想法，所以就有這個幼稚的想法</font><span lang="EN-MY"><o:p></o:p></span></span></p>
+<p class="auto-style5" style="mso-add-space: auto">
+<span lang="EN-MY" style="font-family:STKaiti;mso-fareast-language:ZH-TW"><o:p>&nbsp;</o:p></span></p>
+<h1 style="margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo4" class="auto-style1">
+<a name="故事大綱"><![if !supportLists]>
+<span lang="EN-MY" style="font-family:
+STKaiti;mso-bidi-font-family:STKaiti;mso-fareast-language:
+ZH-TW;mso-bidi-font-weight:bold" class="auto-style32"><span style="mso-list:Ignore"><b>貳、</b><span style="font-style: normal; font-variant: normal; font-size: 7.0pt; line-height: normal; font-family: 'Times New Roman';" class="auto-style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>
+<span style="font-family:STKaiti;mso-fareast-language:ZH-TW"><b>
+故事大綱</b></span></a><b><span lang="EN-MY" style="font-family:STKaiti;color:windowtext;mso-fareast-language:ZH-TW"><o:p></o:p></span></b></h1>
+<p class="auto-style18" style="mso-add-space: auto">
+<span style="font-family:STKaiti;mso-fareast-language:ZH-TW">
+<font size="5">「連鎖丼飯店」的資深員工因對總公司新上任<span lang="EN-MY">CEO</span>所下達的的規章制度等有所不滿 因此決定出來自己單幹 
+將自己在所學的經營知識帶到自己開的新品牌</font><span lang="EN-MY"><o:p></o:p></span></span></p>
+<p class="auto-style5" style="mso-add-space: auto">
+<span lang="EN-MY" style="font-family:STKaiti;mso-fareast-language:ZH-TW"><o:p>&nbsp;</o:p></span></p>
+<h1 style="margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo4" class="auto-style1">
+<a name="游戲類型"><![if !supportLists]>
+<span lang="EN-MY" style="font-family:
+STKaiti;mso-bidi-font-family:STKaiti;mso-fareast-language:
+ZH-TW;mso-bidi-font-weight:bold" class="auto-style32"><span style="mso-list:Ignore"><b>參、</b><span style="font-style: normal; font-variant: normal; font-size: 7.0pt; line-height: normal; font-family: 'Times New Roman';" class="auto-style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>
+<span style="font-family:STKaiti;mso-fareast-language:ZH-TW"><b>
+遊戲類型</b></span></a><b><span lang="EN-MY" style="font-family:STKaiti;color:windowtext;mso-fareast-language:ZH-TW"><o:p></o:p></span></b></h1>
+<p class="auto-style19" style="mso-add-space: auto; mso-list: l0 level1 lfo2"><![if !supportLists]>
+<span lang="EN-MY" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>
+<span lang="ZH-CN" style="font-family:STKaiti" class="auto-style34">
+已手機為主要游戲器材</span><span lang="EN-MY" style="font-family:STKaiti"><o:p></o:p></span></p>
+<p class="auto-style19" style="mso-add-space: auto; mso-list: l0 level1 lfo2"><![if !supportLists]>
+<span lang="EN-MY" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">·<span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: 'Times New Roman';" class="auto-style34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>
+<span lang="ZH-CN" style="font-family:STKaiti" class="auto-style34">
+多人游戲</span><span lang="EN-MY" style="font-family:STKaiti"><o:p></o:p></span></p>
+<p class="auto-style19" style="mso-add-space: auto; mso-list: l0 level1 lfo2"><![if !supportLists]>
+<span lang="EN-MY" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">·<span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: 'Times New Roman';" class="auto-style34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>
+<span lang="ZH-CN" style="font-family:STKaiti" class="auto-style34">
+餐廳經營爲主題</span><span lang="EN-MY" style="font-family:STKaiti"><o:p></o:p></span></p>
+<p class="auto-style19" style="mso-add-space: auto; mso-list: l0 level1 lfo2"><![if !supportLists]>
+<span lang="EN-MY" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">·<span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: 'Times New Roman';" class="auto-style34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>
+<span lang="ZH-CN" style="font-family:STKaiti" class="auto-style34">
+風格為擬物風格爲主</span><span lang="EN-MY" style="font-family:STKaiti"><o:p></o:p></span></p>
+<p class="auto-style5" style="mso-add-space: auto">
+<span lang="EN-MY" style="font-family:STKaiti"><o:p>&nbsp;</o:p></span></p>
+<h1 style="margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo4" class="auto-style1">
+<![if !supportLists]>
+<span lang="EN-MY" style="font-family:
+STKaiti;mso-bidi-font-family:STKaiti;mso-fareast-language:
+ZH-TW;mso-bidi-font-weight:bold" class="auto-style32"><a name="游戲流程"><span style="mso-list:Ignore">
+<b>肆、</b><span style="font-style: normal; font-variant: normal; font-size: 7.0pt; line-height: normal; font-family: 'Times New Roman';" class="auto-style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></a></span><![endif]><a name="游戲流程">
+<span style="font-family:STKaiti;mso-fareast-language:ZH-TW"><b>
+遊戲流程</b></span></a><b></a></b><o:p></o:p></h1>
+<p style="margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo4" class="auto-style1">
+<o:p></o:p></p>
+<p class="auto-style19" style="mso-add-space: auto; mso-list: l1 level2 lfo1"><![if !supportLists]>
+<b>
+<span style="mso-list:Ignore">
+<span lang="EN-MY" style="line-height:115%;font-family:STKaiti;
+mso-bidi-font-family:STKaiti" class="auto-style36">一.</span><span lang="EN-MY" style="font-size:14.0pt;line-height:115%;font-family:STKaiti;
+mso-bidi-font-family:STKaiti"><span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: 'Times New Roman';" class="auto-style36">
+</span></span></span></b><![endif]>
+<span lang="ZH-CN" style="line-height:115%;font-family:STKaiti" class="auto-style35">
+操作方式</span><o:p></o:p></p>
+<o:p></o:p>
+<div style="height: 26px">
+</div>
+<p class="auto-style37" style="mso-add-space: auto; mso-list: l2 level1 lfo3">
+<span lang="ZH-CN" style="font-family:STKaiti">以點擊及滑動來操作</span><o:p></o:p></p>
+<o:p></o:p>
+<div style="height: 55px">
+</div>
+<p class="auto-style19" style="mso-add-space: auto; mso-list: l1 level2 lfo1"><![if !supportLists]>
+<b>
+<span style="mso-list:Ignore">
+<span lang="EN-MY" style="line-height:115%;font-family:STKaiti;
+mso-bidi-font-family:STKaiti" class="auto-style36">二.</span><span lang="EN-MY" style="font-size:14.0pt;line-height:115%;font-family:STKaiti;
+mso-bidi-font-family:STKaiti"><span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: 'Times New Roman';" class="auto-style36">
+</span></span></span></b><![endif]>
+<span lang="ZH-CN" style="line-height:115%;font-family:STKaiti" class="auto-style35">
+玩法介紹</span><o:p></o:p></p>
+<o:p></o:p>
+<div style="height: 25px">
+</div>
+<p class="auto-style18" style="mso-add-space: auto">
+<span style="font-family:STKaiti;mso-fareast-language:ZH-TW">
+<font size="5">游戲需要集齊五位玩家聯機游玩，五名玩家對應五個不同的站點，從客人下單的那一刻，每位玩家游戲畫面上方有一個賬單欄位，接著由製作牛丼的玩家開啓第一棒，接著將牛丼傳送給第二個玩家來加工，再傳給第三個玩家，第四個玩家提供第三個玩家需要的套餐飲料等，再有第三個玩家整合之後傳給下單的第五個玩家來將餐點送給客人。</font><span lang="EN-MY"><o:p></o:p></span></span></p>
+<p class="auto-style4" style="mso-add-space: auto; height: 55px;">&nbsp;</p>
+<p class="auto-style12" style="mso-add-space: auto; mso-list: l1 level2 lfo1"><![if !supportLists]>
+<b>
+<span style="mso-list:Ignore">
+<span lang="EN-MY" style="line-height:115%;font-family:STKaiti;
+mso-bidi-font-family:STKaiti" class="auto-style36">三.</span><span lang="EN-MY" style="font-size:14.0pt;line-height:115%;font-family:STKaiti;
+mso-bidi-font-family:STKaiti"><span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: 'Times New Roman';" class="auto-style36">
+</span></span></span></b><![endif]>
+<span lang="ZH-CN" style="line-height:115%;font-family:STKaiti" class="auto-style35">
+流程圖</span><o:p></o:p></p>
+<p class="auto-style12" style="mso-add-space: auto; mso-list: l1 level2 lfo1">
+<o:p>
+<table style="width: 100%">
+	<tr>
+		<td>
+		<img alt="" height="839" src="personal%20baogao_pic/biaoge.png" width="700" /></td>
+		<td>
+		<img alt="" height="745" src="personal%20baogao_pic/biaoge%202.png" width="700" /></td>
+	</tr>
+	<tr>
+		<td class="auto-style38">
+		<span lang="ZH-TW" style="font-family: STKaiti; mso-fareast-language: ZH-TW">
+		表</span><span style="font-family: STKaiti; mso-fareast-language: ZH-TW">1<span lang="ZH-TW">：整體游戲流程</span></span></td>
+		<td class="auto-style34">
+		<span lang="ZH-TW" style="font-family: STKaiti; mso-fareast-language: ZH-TW">
+		表</span><span style="font-family: STKaiti; mso-fareast-language: ZH-TW">2<span lang="ZH-TW">：牛丼製作流程</span><o:p></o:p></span></td>
+	</tr>
+</table>
+</o:p>
+</p>
+<p class="auto-style24" style="mso-add-space: auto">
+<span style="font-family: STKaiti; mso-fareast-language: ZH-TW">
+<span lang="ZH-TW">&nbsp;</span><o:p>&nbsp; </o:p>
+</span></p>
+<p class="auto-style28" style="mso-add-space: auto">
+<o:p>&nbsp;</o:p></p>
+<p class="auto-style28" style="mso-add-space: auto">
+<o:p></o:p></p>
+<p class="auto-style13" style="mso-add-space: auto; mso-list: l1 level2 lfo1">
+<span style="font-family:
+STKaiti;mso-bidi-font-family:STKaiti;mso-fareast-language:
+ZH-TW;mso-bidi-font-weight:bold" class="auto-style31"><strong>伍</strong></span><span style="mso-list:Ignore"><span lang="EN-MY" style="font-family:
+STKaiti;mso-bidi-font-family:STKaiti;mso-fareast-language:
+ZH-TW;mso-bidi-font-weight:bold" class="auto-style41"><a name="游戲流程2"><strong>、</strong></a></span><a name="游戲流程2"><span lang="EN-MY" style="font-family:
+STKaiti;mso-bidi-font-family:STKaiti;mso-fareast-language:
+ZH-TW;mso-bidi-font-weight:bold"><span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: 'Times New Roman';" class="auto-style41"><strong>&nbsp;&nbsp;
+</strong>
+</span></span></a></span><a name="游戲流程1">
+<span style="font-family:STKaiti;mso-fareast-language:ZH-TW" class="auto-style31"><strong>遊戲</strong></span></a><strong><a name="游戲畫面"><span class="auto-style27">畫</span><span class="auto-style15"><span class="auto-style41">面</span></span></a></strong></p>
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style1" style="height: 48px; width: 835px">
+		<span lang="ZH-CN" style="line-height:115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA;mso-no-proof:yes" class="auto-style39">畫面</span></td>
+		<td class="auto-style1" style="height: 48px">
+		<span lang="ZH-CN" style="line-height:115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:
+ZH-CN;mso-bidi-language:AR-SA;mso-no-proof:yes" class="auto-style39">説明</span></td>
+	</tr>
+	<tr>
+		<td class="auto-style1" style="width: 835px">
+<img alt="" height="450" src="personal%20baogao_pic/IMG_0149.PNG" width="800" class="auto-style40" /><br class="auto-style40">
+<span lang="ZH-TW" style="font-family: STKaiti; mso-fareast-language: ZH-TW" class="auto-style40">圖</span><span style="font-family: STKaiti" class="auto-style40">1-</span><span style="font-family: STKaiti; mso-fareast-language: ZH-TW">1<span lang="ZH-TW" class="auto-style40">：主選單</span><o:p></o:p></span></td>
+		<td class="auto-style1">
+		<span lang="ZH-TW" style="line-height:
+115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:
+minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:ZH-TW;mso-bidi-language:
+AR-SA" class="auto-style40">打開游戲的第一個畫面，右下角為“開始游戲”按鈕，左下角為“退出游戲”按鈕。點擊“開始游戲”將引導玩家到下一個游戲畫面，點擊“退出游戲”則會關閉游戲。</span></td>
+	</tr>
+	<tr>
+		<td class="auto-style1" style="width: 835px">
+<img alt="" height="450" src="personal%20baogao_pic/IMG_0170.PNG" width="800" /><br>
+<span lang="ZH-TW" style="font-family: STKaiti; mso-fareast-language: ZH-TW" class="auto-style34">圖</span><span style="font-family: STKaiti" class="auto-style34">1-</span><span style="font-family: STKaiti; mso-fareast-language: ZH-TW">2<span lang="ZH-TW" class="auto-style34">：取名字</span><o:p></o:p></span></td>
+		<td class="auto-style1">
+		<span lang="ZH-TW" style="line-height:
+115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:
+minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:ZH-TW;mso-bidi-language:
+AR-SA" class="auto-style34">玩家將從上一個游戲畫面引導到此畫面，玩家需要在開始游戲前取個名字，玩家輸入玩名字之後在鍵盤點擊“</span><span style="line-height:115%;font-family:STKaiti;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-MY;
+mso-fareast-language:ZH-TW;mso-bidi-language:AR-SA" class="auto-style34">ENTER<span lang="ZH-TW">”即可進入下一個畫面。</span></span></td>
+	</tr>
+	<tr>
+		<td class="auto-style1" style="width: 835px">
+<img alt="" height="450" src="personal%20baogao_pic/IMG_0183.PNG" width="800" /><span lang="ZH-TW" style="font-size: 12.0pt; line-height: 115%; font-family: STKaiti; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-MY; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA"><br></span>
+		<span lang="ZH-TW" style="line-height: 115%; font-family: STKaiti; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-MY; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA" class="auto-style34">圖</span><span style="line-height: 115%; font-family: STKaiti; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-MY; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA" class="auto-style34">1-3<span lang="ZH-TW">：聯機畫面</span></span>&nbsp;</td>
+		<td class="auto-style1">
+		<span lang="ZH-TW" style="line-height:
+115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:
+minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:ZH-TW;mso-bidi-language:
+AR-SA" class="auto-style34">玩家進入到此玩家后即可與好友分享房號邀請好友加入游戲房間，凑夠人數之後即可點擊“開始”按鈕。玩家們將隨機被分配到不同游戲站點。</span></td>
+	</tr>
+	<tr>
+		<td class="auto-style1" style="width: 835px">
+<img alt="" height="450" src="personal%20baogao_pic/IMG_0172.PNG" width="800" /><span lang="ZH-TW" style="font-family: STKaiti; mso-fareast-language: ZH-TW"><br>
+		<font size="5">圖</font></span><span style="font-family: STKaiti; mso-fareast-language: ZH-TW"><font size="5">1-4</font><span lang="ZH-TW" class="auto-style34">：製作牛丼</span><o:p></o:p></span></td>
+		<td class="auto-style1">
+		<span lang="ZH-TW" style="line-height:
+115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:
+minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:ZH-TW;mso-bidi-language:
+AR-SA" class="auto-style34">此畫面為加工牛丼畫面，玩家需根據單子需求添加牛丼配料。配料選擇有葱花（左上），起司（左下），泡菜（右上），秋葵（右下）。點擊相應配料即可添加至牛丼上方。完成後即可滑動牛丼至下一個游戲畫面。</span></td>
+	</tr>
+	<tr>
+		<td class="auto-style1" style="width: 835px">
+<img alt="" height="450" src="personal%20baogao_pic/IMG_0171.PNG" width="800" /><!--[if gte vml 1]><v:shapetype id="_x0000_t76" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f"><v:stroke joinstyle="miter" xmlns:v="urn:schemas-microsoft-com:vml"/><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum @0 1 0" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum 0 0 @1" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @2 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @3 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @3 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum @0 0 1" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @6 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @7 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum @8 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @7 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum @10 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/></v:formulas><v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" xmlns:v="urn:schemas-microsoft-com:vml"/><o:lock v:ext="edit" aspectratio="t" xmlns:o="urn:schemas-microsoft-com:office:office"/></v:shapetype><v:shape id="Picture_x0020_14" o:spid="_x0000_s1027" type="#_x0000_t75"
+ style='position:absolute;margin-left:-1.1pt;margin-top:282pt;width:450.7pt;
+ height:253.35pt;z-index:251665408;visibility:visible;mso-wrap-style:square;
+ mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text'><v:imagedata src="file:///C:/Users/User/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png"
+  o:title="" xmlns:v="urn:schemas-microsoft-com:vml"/><w:wrap type="square" anchorx="margin" xmlns:w="urn:schemas-microsoft-com:office:word"/></v:shape><![endif]--><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_11" o:spid="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+ margin-left:2pt;margin-top:2.15pt;width:450.7pt;height:253.35pt;z-index:251664384;
+ visibility:visible;mso-wrap-style:square;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text'>&nbsp;<v:imagedata src="file:///C:/Users/User/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png"
+  o:title="" xmlns:v="urn:schemas-microsoft-com:vml"/><w:wrap type="square" xmlns:w="urn:schemas-microsoft-com:office:word"/></v:shape><![endif]--><span lang="ZH-TW" style="font-family: STKaiti; mso-fareast-language: ZH-TW"><br>
+		<font size="5">圖</font></span><span style="font-family: STKaiti; mso-fareast-language: ZH-TW"><font size="5">1-5</font><span lang="ZH-TW" class="auto-style34">：加工牛丼</span></span><b><span style="font-size: 16.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW"><o:p></o:p></span></b></td>
+		<td class="auto-style1">
+		<span lang="ZH-TW" style="line-height:
+115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:
+minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:ZH-TW;mso-bidi-language:
+AR-SA" class="auto-style34">此畫面為加工牛丼畫面，玩家需根據單子需求添加牛丼配料。配料選擇有葱花（左上），起司（左下），泡菜（右上），秋葵（右下）。點擊相應配料即可添加至牛丼上方。完成後即可滑動牛丼至下一個游戲畫面。</span></td>
+	</tr>
+	<tr>
+		<td class="auto-style1" style="width: 835px">
+<img alt="" height="450" src="personal%20baogao_pic/IMG_0181.PNG" width="800" /><!--[if gte vml 1]><v:shapetype id="_x0000_t77" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f"><v:stroke joinstyle="miter" xmlns:v="urn:schemas-microsoft-com:vml"/><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum @0 1 0" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum 0 0 @1" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @2 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @3 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @3 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum @0 0 1" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @6 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @7 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum @8 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="prod @7 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/><v:f eqn="sum @10 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/></v:formulas><v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" xmlns:v="urn:schemas-microsoft-com:vml"/><o:lock v:ext="edit" aspectratio="t" xmlns:o="urn:schemas-microsoft-com:office:office"/></v:shapetype><v:shape id="Picture_x0020_13" o:spid="_x0000_s1027" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:286.4pt;width:450.7pt;
+ height:253.35pt;z-index:251667456;visibility:visible;mso-wrap-style:square;
+ mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:left;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text'><v:imagedata src="file:///C:/Users/User/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png"
+  o:title="" xmlns:v="urn:schemas-microsoft-com:vml"/><w:wrap type="square" anchorx="margin" xmlns:w="urn:schemas-microsoft-com:office:word"/></v:shape><![endif]--><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_12" o:spid="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+ margin-left:1.3pt;margin-top:4.45pt;width:450.7pt;height:253.35pt;z-index:251666432;
+ visibility:visible;mso-wrap-style:square;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text'>&nbsp;<v:imagedata src="file:///C:/Users/User/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png"
+  o:title="" xmlns:v="urn:schemas-microsoft-com:vml"/><w:wrap type="square" anchorx="margin" xmlns:w="urn:schemas-microsoft-com:office:word"/></v:shape><![endif]--><span lang="ZH-TW" style="font-family: STKaiti; mso-fareast-language: ZH-TW"><br>
+		<font size="5">圖</font></span><span style="font-family: STKaiti; mso-fareast-language: ZH-TW"><font size="5">1-7</font><span lang="ZH-TW" class="auto-style34">：組合套餐</span><o:p></o:p></span></td>
+		<td class="auto-style1">
+		<span lang="ZH-TW" style="line-height:
+115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:
+minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:ZH-TW;mso-bidi-language:
+AR-SA" class="auto-style34">此畫面為組合套餐畫面，玩家需要根據單子需求將主餐與副餐組合在一起。玩家需將左上製作完成的牛丼與右上角的飲料與配菜組合到下方的托盤中，將單子從“單子區”滑動下來並貼在托盤上表示完成組合。完成後即可長按托盤並滑動至下一個玩家。</span></td>
+	</tr>
+	<tr>
+		<td class="auto-style1" style="width: 835px">
+<img alt="" height="450" src="personal%20baogao_pic/IMG_0182.PNG" width="800" /><span lang="ZH-TW" style="font-family: STKaiti; mso-fareast-language: ZH-TW"><br>
+		<font size="5">圖</font></span><span style="font-family: STKaiti; mso-fareast-language: ZH-TW"><font size="5">1-8</font><span lang="ZH-TW" class="auto-style34">：送餐給客人</span><o:p></o:p></span></td>
+		<td class="auto-style1">
+		<span lang="ZH-TW" style="line-height:
+115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:
+minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:ZH-TW;mso-bidi-language:
+AR-SA" class="auto-style34">此畫面為客席區，畫面上半部為客人的位置，下半部為組合好的餐點。玩家需點擊客人旁的圖標按鈕對客人做點餐或結賬動作。此外也需要將下半部組合好的餐點送至對應的客人。</span></td>
+	</tr>
+</table>
+<p class="auto-style12" style="mso-add-space: auto; mso-list: l1 level2 lfo1">
+&nbsp;</p>
+<p class="auto-style12" style="mso-add-space: auto; mso-list: l1 level2 lfo1">
+&nbsp;</p>
+<p class="auto-style12" style="mso-add-space: auto; mso-list: l1 level2 lfo1">
+<span lang="EN-MY"><a href="#_Toc210705761">
+<span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-bidi-font-weight: bold; mso-no-proof: yes" class="auto-style33">
+陸、</span></a><a href="#_Toc210705761" class="auto-style10"><span lang="EN-US" style="font-size: 22.0pt; line-height: 115%; font-family: STKaiti; mso-fareast-language: ZH-TW; mso-no-proof: yes" class="auto-style33">參考遊戲</span></a><a href="#_Toc210705761"><span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style11"><span style="mso-tab-count:1 dotted">...
+</span></span><!--[if supportFields]>
+<span style="font-size:22.0pt;line-height:115%;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none" class="auto-style11">
+PAGEREF _Toc210705761 \h </span><![endif]-->
+<span style="font-size:22.0pt;line-height:115%;color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-underline:none">
+<span class="auto-style11">10</span><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200310030003700300035003700360031000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><![endif]--></a></span><o:p></o:p></p>
+<o:p></o:p>
+<table style="width: 100%">
+	<tr>
+		<td style="height: 265px">
+		<img alt="" height="252" src="personal%20baogao_pic/img2C.jpg" width="450" />&nbsp;</td>
+		<td style="height: 265px">
+		<img alt="" height="252" src="personal%20baogao_pic/img2D.jpg" width="450" />&nbsp;</td>
+		<td style="height: 265px">
+		<img alt="" height="252" src="personal%20baogao_pic/img2E.jpg" width="450" />&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="height: 37px">
+		<p class="MsoNormal"><!--[if gte vml 1]>
+		<v:shapetype
+ id="_x0000_t79" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @0 1 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum 0 0 @1" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @2 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @3 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @3 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @0 0 1" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @6 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @7 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @8 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @7 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @10 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <o:lock v:ext="edit" aspectratio="t" xmlns:o="urn:schemas-microsoft-com:office:office"/>
+</v:shapetype><v:shape id="Picture_x0020_16" o:spid="_x0000_s1026" type="#_x0000_t75"
+ style='position:absolute;left:0;text-align:left;margin-left:13.5pt;
+ margin-top:290.65pt;width:451.05pt;height:253.75pt;z-index:251669504;
+ visibility:visible;mso-wrap-style:square;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text'>
+ <v:imagedata src="file:///C:/Users/User/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg"
+  o:title="" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <w:wrap type="square" xmlns:w="urn:schemas-microsoft-com:office:word"/>
+</v:shape><![endif]-->
+		<span lang="ZH-TW" style="font-family:STKaiti;mso-fareast-language:ZH-TW" class="auto-style34">
+		圖</span><span style="font-family:STKaiti" class="auto-style34">2-1</span><span lang="ZH-TW" style="font-family:STKaiti;
+mso-fareast-language:ZH-TW" class="auto-style34">：</span><span style="font-family:STKaiti" class="auto-style34">Good 
+		Pizza, Great Pizza<o:p></o:p></span></p>
+		</td>
+		<td style="height: 37px">
+		<p class="MsoNormal">
+		<span lang="ZH-TW" style="font-family:STKaiti;mso-fareast-language:ZH-TW" class="auto-style34">
+		圖</span><span style="font-family:STKaiti"><font size="5">2-2</font><span lang="ZH-CN" class="auto-style34">：</span><font size="5">Family 
+		Style</font><o:p></o:p></span></p>
+		</td>
+		<td style="height: 37px">
+		<p class="MsoNormal"><!--[if gte vml 1]>
+		<v:shapetype id="_x0000_t78" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @0 1 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum 0 0 @1" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @2 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @3 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @3 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @0 0 1" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @6 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @7 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @8 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @7 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @10 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <o:lock v:ext="edit" aspectratio="t" xmlns:o="urn:schemas-microsoft-com:office:office"/>
+</v:shapetype><v:shape id="Picture_x0020_19" o:spid="_x0000_s1027" type="#_x0000_t75"
+ alt="Papa's Freezeria - Play it Online at Coolmath Games" style='position:absolute;
+ margin-left:0;margin-top:279.6pt;width:449.9pt;height:262.3pt;z-index:251671552;
+ visibility:visible;mso-wrap-style:square;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:left;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text'>
+ <v:imagedata src="file:///C:/Users/User/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg"
+  o:title="Papa's Freezeria - Play it Online at Coolmath Games" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <w:wrap type="square" anchorx="margin" xmlns:w="urn:schemas-microsoft-com:office:word"/>
+</v:shape><![endif]--><!--[if gte vml 1]><v:shape id="Picture_x0020_18"
+ o:spid="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+ margin-left:399.85pt;margin-top:0;width:451.05pt;height:253.75pt;z-index:251670528;
+ visibility:visible;mso-wrap-style:square;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:right;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text'>
+ &nbsp;<v:imagedata src="file:///C:/Users/User/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg"
+  o:title="" xmlns:v="urn:schemas-microsoft-com:vml"/><w:wrap type="square" anchorx="margin" xmlns:w="urn:schemas-microsoft-com:office:word"/></v:shape><![endif]--><span lang="ZH-TW" style="font-family:STKaiti;mso-fareast-language:ZH-TW" class="auto-style34">圖</span><span style="font-family:STKaiti" class="auto-style34">2-3</span><span lang="ZH-TW" style="font-family:STKaiti;
+mso-fareast-language:ZH-TW" class="auto-style34">：</span><span style="font-family:STKaiti" class="auto-style34">Overcooked<o:p></o:p></span></p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<img alt="" height="261" src="personal%20baogao_pic/img2F.jpg" width="450" /></td>
+		<td>
+		<img alt="" height="270" src="personal%20baogao_pic/img30.jpg" width="450" />&nbsp;</td>
+		<td>
+		<img alt="" height="257" src="personal%20baogao_pic/img31.jpg" width="450" />&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="height: 37px">
+		<p class="MsoNormal">
+		<span lang="ZH-CN" style="font-family:STKaiti" class="auto-style34">圖</span><span style="font-family:STKaiti" class="auto-style34">2-4</span><span lang="ZH-TW" style="font-family:STKaiti;
+mso-fareast-language:ZH-TW" class="auto-style34">：</span><span style="font-family:STKaiti" class="auto-style34">Papa<span lang="zh-cn">'</span>s 
+		Freezeria</span><span style="font-family:STKaiti;mso-fareast-font-family:PMingLiU;
+mso-fareast-language:ZH-TW"><o:p></o:p></span></p>
+		</td>
+		<td style="height: 37px">
+		<span lang="ZH-CN" style="line-height:
+115%;font-family:STKaiti;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:
+minor-bidi;mso-ansi-language:EN-MY;mso-fareast-language:ZH-CN;mso-bidi-language:
+AR-SA" class="auto-style34">圖</span><span style="line-height:115%;font-family:STKaiti;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-MY;mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA" class="auto-style34">2-5</span><span lang="ZH-TW" style="line-height:115%;font-family:STKaiti;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-MY;mso-fareast-language:ZH-TW;mso-bidi-language:AR-SA" class="auto-style34">：</span><span style="line-height:115%;font-family:STKaiti;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-MY;
+mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA" class="auto-style34">LINE I Love Coffee</span></td>
+		<td style="height: 37px">
+		<p class="MsoNormal">
+		<span lang="ZH-CN" style="font-family:STKaiti" class="auto-style34">圖</span><span style="font-family:STKaiti" class="auto-style34">2-6</span><span lang="ZH-TW" style="font-family:STKaiti;
+mso-fareast-language:ZH-TW" class="auto-style34">：</span><span lang="ZH-CN" style="font-family:STKaiti;
+mso-ansi-language:EN-US" class="auto-style34">沙威瑪傳奇</span><span lang="EN-US" style="font-family:STKaiti;
+mso-fareast-font-family:PMingLiU;mso-ansi-language:EN-US"><o:p></o:p></span></p>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

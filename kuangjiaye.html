@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>美味牛丼 - 專案開發網站</title>
+<style type="text/css">
+    /* 清除預設邊距 */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* 設定網頁全螢幕高度，不讓視窗出現雙重捲軸 */
+    body {
+        font-family: "Microsoft JhengHei", Arial, sans-serif;
+        height: 100vh; /* 佔滿視窗高度 */
+        display: flex;
+        flex-direction: column; /* 上下排列 */
+        overflow: hidden; /* 隱藏最外層捲軸 */
+        background: #f0f0f0;
+    }
+
+    /* 上方橫幅區域 */
+    .banner-frame {
+        height: 120px; /* 固定高度 */
+        width: 100%;
+        border: none;
+        flex-shrink: 0; /* 禁止縮小 */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 陰影效果 */
+        z-index: 10; /* 確保陰影壓在下方內容上 */
+    }
+
+    /* 下方內容容器 (包含左側選單與右側內容) */
+    .content-wrapper {
+        display: flex; /* 左右排列 */
+        flex: 1; /* 佔滿剩餘高度 */
+        overflow: hidden;
+        background: #ffffff;
+    }
+
+    /* 左側選單區域 */
+    .sidebar-frame {
+        width: 220px; /* 固定寬度 */
+        border: none;
+        flex-shrink: 0;
+        border-right: 1px solid #e0e0e0;
+        background: #f9f9f9;
+    }
+
+    /* 右側主要內容區域 */
+    .main-frame {
+        flex: 1; /* 佔滿剩餘寬度 */
+        border: none;
+        overflow: auto; /* 內容過長時出現捲軸 */
+        background: #ffffff;
+    }
+
+    /* --- RWD 響應式設計 (手機版樣式) --- */
+    @media (max-width: 768px) {
+        .banner-frame {
+            height: 80px; /* 手機版橫幅變矮 */
+        }
+        
+        .content-wrapper {
+            flex-direction: column; /* 手機版改為上下排列 */
+        }
+        
+        .sidebar-frame {
+            width: 100%; /* 選單變滿寬 */
+            height: 150px; /* 給定高度 */
+            border-right: none;
+            border-bottom: 2px solid #ccc;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<iframe class="banner-frame" src="banner.html" title="Banner Area"></iframe>
+
+<div class="content-wrapper">
+    <iframe class="sidebar-frame" src="wohenhao.html" title="Sidebar Navigation"></iframe>
+    
+    <iframe class="main-frame" name="main" src="content.html" title="Main Content Area"></iframe>
+</div>
+</body>
+</html>
