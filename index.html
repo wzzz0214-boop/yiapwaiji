@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>首頁</title>
+<style type="text/css">
+@font-face {
+	font-family: "Bondi MT Poster Compressed";
+	src: url("fonts/BondiMTPosterCompressed.woff2") format("woff2"),
+		 url("fonts/BondiMTPosterCompressed.woff") format("woff"),
+		 url("fonts/BondiMTPosterCompressed.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+}
+
+
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: 
+		radial-gradient(circle at 20% 50%, rgba(195, 207, 226, 0.3) 0%, transparent 50%),
+		radial-gradient(circle at 80% 80%, rgba(245, 247, 250, 0.3) 0%, transparent 50%);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.header {
+  text-align: center;
+  margin: 0;                  padding-bottom: 10px;    
+  position: relative;
+  z-index: 1;
+}
+
+
+.nav-menu {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;   
+  position: relative;
+  z-index: 1;
+}
+
+.header-gif {
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+	height: auto;
+	transform-origin: center center;
+	image-rendering: auto;
+}
+
+.title {
+	text-align: center;
+	font-family: "Bondi MT Poster Compressed", "Bodoni MT Poster Compressed", serif;
+	font-size: 80pt;
+	margin: 20px 0 5px 0;
+	line-height: 0.9;
+	color: #2c3e50;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	letter-spacing: 2px;
+}
+
+.subtitle {
+	text-align: center;
+	font-family: "Bondi MT Poster Compressed", "Bodoni MT Poster Compressed", serif;
+	font-size: 50pt;
+	margin: 5px 0;
+	line-height: 1.2;
+	color: #34495e;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	opacity: 0.9;
+}
+
+.nav-menu {
+	width: 100%;
+	max-width: 600px;
+	margin: 30px auto;
+	position: relative;
+	z-index: 1;
+}
+
+.nav-menu table {
+	width: 100%;
+	border-collapse: collapse;
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+.nav-menu td {
+	text-align: center;
+	padding: 12px;
+	border-bottom: 1px solid #e0e0e0;
+	transition: background-color 0.3s ease;
+}
+
+.nav-menu td:hover {
+	background-color: rgba(195, 207, 226, 0.3);
+}
+
+.nav-menu td:last-child {
+	border-bottom: none;
+}
+
+.nav-link {
+	color: #333;
+	text-decoration: none;
+	font-size: 24px;
+	display: block;
+	padding: 8px;
+	transition: all 0.3s ease;
+	font-weight: 500;
+	position: relative;
+}
+
+.nav-link::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0;
+	height: 2px;
+	background: linear-gradient(90deg, #c3cfe2, #a8b5d1);
+	transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+	color: #5a6c7d;
+	padding-left: 20px;
+}
+
+.nav-link:hover::before {
+	width: 10px;
+}
+
+.nav-link[style*="color: #999"] {
+	color: #999 !important;
+	cursor: default;
+}
+
+.nav-link[style*="color: #999"]:hover {
+	padding-left: 8px;
+}
+
+.nav-link[style*="color: #999"]::before {
+	display: none;
+}
+.auto-style1 {
+	margin-top: 0px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+	<img alt="yeweizhi" height="547" src="index_pic/IMG_0173.PNG" width="945">
+</div>
+
+<nav class="nav-menu">
+	<table class="auto-style1">
+		<tr>
+			<td>
+				<a class="nav-link" href="profile.html">個人簡介</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a class="nav-link" href="personal%20baogao.html">個人企劃書</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a class="nav-link" href="groupbaogao.html">團體企劃書</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a class="nav-link" href="kuangjiaye.html">網頁練習</a>
+			</td>
+
+	</table>
+</nav>
+
+
+</body>
+</html>
