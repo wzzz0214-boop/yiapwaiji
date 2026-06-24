@@ -201,13 +201,12 @@
             <li><a href="#section2">貳、遊戲基本介紹與定位</a></li>
             <li><a href="#section3">參、遊戲故事背景</a></li>
             <li><a href="#section4">肆、遊戲玩法與流程設計</a></li>
-            <li><a href="#section5">伍、評分與結算機制</a></li>
-            <li><a href="#section6">陸、遊戲畫面風格</a></li>
-            <li><a href="#section7">柒、可行性分析與技術挑戰</a></li>
-            <li><a href="#section8">捌、程式架構與技術實作</a></li>
-            <li><a href="#section9">玖、團隊分工表</a></li>
-            <li><a href="#section10">壹拾、專案開發時程</a></li>
-            <li><a href="#section11">壹拾壹、參考遊戲</a></li>
+            <li><a href="#section5">伍、遊戲畫面風格</a></li>
+            <li><a href="#section6">陸、可行性分析與技術挑戰</a></li>
+            <li><a href="#section7">柒、程式架構與技術實作</a></li>
+            <li><a href="#section8">捌、團隊分工表</a></li>
+            <li><a href="#section9">玖、專案開發時程</a></li>
+            <li><a href="#section10">壹拾、參考遊戲</a></li>
         </ul>
     </div>
 
@@ -334,50 +333,9 @@
         </div>
     </section>
 
+
     <section id="section5">
-        <h2 class="section-title">伍、評分與結算機制</h2>
-        <p>為了貫徹「專業經營」的創業精神，本遊戲摒棄傳統的單純計分，改採用真實餐飲業的財務報表與人效指標進行結算。</p>
-        
-        <div class="highlight-box">
-            <h4>（一）核心數據定義</h4>
-            <p><strong>1. 淨利潤 (Net Profit)</strong></p>
-            <p><code>{淨利潤} = {營業額} - {食材成本} - {耗損}</code></p>
-            <ul>
-                <li><strong>營業額：</strong> 成功賣出的餐點總價（例：牛丼$100、套餐$150）。</li>
-                <li><strong>食材成本：</strong> 每製作一份餐點的固定成本（例：每賣出一碗牛丼，系統自動扣除 $30 原料費）。</li>
-                <li><strong>耗損 (Loss)：</strong> 最關鍵的懲罰機制。任何因做錯、煮焦而丟進垃圾桶的食材，將以「售價的 100%」作為罰款。</li>
-            </ul>
-            <p><strong>2. 人時接客數 (CPH)</strong></p>
-            <p><code>{人時接客數} = {總來客數} / {總工時}</code></p>
-            <p>系統會計算「完成訂單數」除以「遊戲時間 x 玩家人數」。數值越高，代表團隊手腳越快、默契越好。</p>
-        </div>
-
-        <h4>（二）多人模式評估：年度績效考核</h4>
-        <p>系統根據「淨利潤」與「人時接客數」的綜合表現，給予團隊一個諷刺性的企業職稱：</p>
-        <ul>
-            <li><strong>S 級（餐飲大亨）：</strong> 淨利極高 + 高人效。</li>
-            <li><strong>A 級（黃金店長）：</strong> 利潤優秀。</li>
-            <li><strong>B 級（資深社畜）：</strong> 表現平平。</li>
-            <li><strong>C 級（薪水小偷）：</strong> 利潤低或耗損高。</li>
-            <li><strong>F 級（惡意倒閉）：</strong> 負利潤。</li>
-            <li><strong>MVP 機制：</strong> 結算時會抓出「最佳員工」與「廚房破壞者」。</li>
-        </ul>
-
-        <h4>（三）單人模式評估：分店營運目標</h4>
-        <ul>
-            <li><strong>過關條件：</strong> 每一關設有「目標淨利 (Target Profit)」，玩家必須在時間結束時，確保利潤大於目標值，否則視為「經營不善，店鋪倒閉」。</li>
-            <li><strong>星級評價：</strong>
-                <ul>
-                    <li>1星：剛好達到目標淨利。</li>
-                    <li>2星：超過目標淨利 120%。</li>
-                    <li>3星：超過目標淨利 150% 且人時接客數達到高標。</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-    <section id="section6">
-        <h2 class="section-title">陸、遊戲畫面風格</h2>
+        <h2 class="section-title">伍、遊戲畫面風格</h2>
         
         <div class="media-block">
             <div class="media-img">
@@ -450,8 +408,8 @@
         </div>
     </section>
 
-    <section id="section7">
-        <h2 class="section-title">柒、可行性分析與技術挑戰</h2>
+    <section id="section6">
+        <h2 class="section-title">陸、可行性分析與技術挑戰</h2>
         <h3>（一）程式開發挑戰</h3>
         <ul>
             <li><strong>多人連線同步 (Multiplayer Networking)：</strong> 由於遊戲核心為 5 人即時協作，任何延遲都會破壞體驗。需使用 Photon 或類似的 Unity 連線套件，解決封包同步問題。</li>
@@ -472,8 +430,8 @@
         </ul>
     </section>
 
-    <section id="section8">
-        <h2 class="section-title">捌、程式架構與技術實作</h2>
+    <section id="section7">
+        <h2 class="section-title">柒、程式架構與技術實作</h2>
         <p>本專案使用 Unity 引擎開發，語言為 C#。程式開發重點在於實現高精度的「多人即時連線同步」以及流暢的「物理手勢操作」。</p>
         
         <h3>（一）連線與同步架構 (Networking Architecture)</h3>
@@ -498,8 +456,8 @@
         </ul>
     </section>
 
-    <section id="section9">
-        <h2 class="section-title">玖、團隊分工表</h2>
+    <section id="section8">
+        <h2 class="section-title">捌、團隊分工表</h2>
         <table class="styled-table">
             <thead>
                 <tr>
@@ -528,8 +486,8 @@
         </table>
     </section>
 
-    <section id="section10">
-        <h2 class="section-title">壹拾、專案開發時程</h2>
+    <section id="section9">
+        <h2 class="section-title">玖、專案開發時程</h2>
         <p>本專案將開發週期分為兩個主要階段：「寒假衝刺期（單人核心版）」與「學期製作期（多人完整版）」。</p>
 
         <h3 class="sub-title">第一階段：寒假衝刺期 (單人遊玩驗收版)</h3>
@@ -647,8 +605,8 @@
         </table>
     </section>
 
-    <section id="section11">
-        <h2 class="section-title">壹拾壹、參考遊戲</h2>
+    <section id="section10">
+        <h2 class="section-title">壹拾、參考遊戲</h2>
         <div class="media-block">
             <div class="media-img"><img src="personal%20baogao_pic/img2C.jpg" alt="Good Pizza"></div>
             <div class="media-text"><p><strong>Good Pizza, Great Pizza</strong></p></div>
